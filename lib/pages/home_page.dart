@@ -237,27 +237,6 @@ class _HomepageState extends State<Homepage> {
                           ),
                         ],
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(
-                          top: 40,
-                        ),
-                        child: ElevatedButton(
-                            onPressed: () {
-                              Navigator.pushNamed(
-                                  context, MyRoutes.RegistrationPage);
-                            },
-                            style: ElevatedButton.styleFrom(
-                                primary: Color(0xff1D5E4A),
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(30),
-                                    side: BorderSide())),
-                            child: Padding(
-                              padding: const EdgeInsets.all(6),
-                              child: Text(
-                                "Register Now",
-                              ),
-                            )),
-                      )
                     ],
                   ),
                 ),
@@ -320,30 +299,56 @@ class _HomepageState extends State<Homepage> {
                                       style: TextStyle(fontSize: 20),
                                     ),
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                      right: 240,
-                                      top: 20,
-                                    ),
-                                    child: ElevatedButton(
-                                        onPressed: () {
-         // Navigator.pushNamed(context, MyRoutes.homePage2);
-         Navigator.pushNamed(context, MyRoutes.ClassroompresentationPage);
-
-                                        },
-                                        style: ElevatedButton.styleFrom(
-                                            primary: Color(0xff1D5E4A),
-                                            shape: RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(30),
-                                                side: BorderSide())),
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(6),
-                                          child: Text(
-                                            "Classroom Presentaion",
-                                          ),
-                                        )),
-                                  )
+                                  Row(
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                            right: 160, top: 20),
+                                        child: ElevatedButton(
+                                            onPressed: () {
+                                              // Navigator.pushNamed(context, MyRoutes.homePage2);
+                                              Navigator.pushNamed(
+                                                  context,
+                                                  MyRoutes
+                                                      .ClassroompresentationPage);
+                                            },
+                                            style: ElevatedButton.styleFrom(
+                                                primary: Color(0xff1D5E4A),
+                                                shape: RoundedRectangleBorder(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            30),
+                                                    side: BorderSide())),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(6),
+                                              child: Text(
+                                                "Classroom Presentaion",
+                                              ),
+                                            )),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 20),
+                                        child: ElevatedButton(
+                                            onPressed: () {
+                                              Navigator.pushNamed(context,
+                                                  MyRoutes.RegistrationPage);
+                                            },
+                                            style: ElevatedButton.styleFrom(
+                                                primary: Color(0xff1D5E4A),
+                                                shape: RoundedRectangleBorder(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            30),
+                                                    side: BorderSide())),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(6),
+                                              child: Text(
+                                                "Register Now",
+                                              ),
+                                            )),
+                                      )
+                                    ],
+                                  ),
                                 ],
                               ),
                             )
@@ -369,18 +374,23 @@ class _HomepageState extends State<Homepage> {
               child: Row(
                 children: [
                   SizedBox(
-                    height: 250,
-                    width: 330,
+                    height: 200,
+                    width: 360,
                     child: Padding(
-                      padding: const EdgeInsets.only(left: 0),
+                      padding: const EdgeInsets.only(left: 100),
                       child: Card(
                         //backgroundcolor: rgba(29, 94, 74, 0.12);
                         color: const Color.fromRGBO(29, 94, 74, 0.12),
                         child: Column(
                           children: [
-                            Center(
-                              child: Icon(Icons.account_balance_wallet_rounded,
-                                  size: 60, color: Color(0xff1D5E4A)),
+                            Padding(
+                              padding: const EdgeInsets.all(10.0),
+                              child: Center(
+                                child: Icon(
+                                    Icons.account_balance_wallet_rounded,
+                                    size: 40,
+                                    color: Color(0xff1D5E4A)),
+                              ),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(top: 20),
@@ -388,7 +398,7 @@ class _HomepageState extends State<Homepage> {
                                 "Total Free",
                                 // textAlign: TextAlign.center,
                                 style: TextStyle(
-                                    fontSize: 30, color: Colors.black),
+                                    fontSize: 20, color: Colors.black),
                               ),
                             ),
                             Padding(
@@ -397,7 +407,7 @@ class _HomepageState extends State<Homepage> {
                                 "Providing all the\ncontent totally free\nof cost!",
                                 // textAlign: TextAlign.center,
                                 style: TextStyle(
-                                    fontSize: 25, color: Colors.black),
+                                    fontSize: 15, color: Colors.black),
                               ),
                             ),
                           ],
@@ -406,8 +416,8 @@ class _HomepageState extends State<Homepage> {
                     ),
                   ),
                   SizedBox(
-                    height: 250,
-                    width: 330,
+                    height: 200,
+                    width: 300,
                     child: Padding(
                       padding: const EdgeInsets.only(left: 0),
                       child: Card(
@@ -415,9 +425,12 @@ class _HomepageState extends State<Homepage> {
                         color: Color(0xff1D5E4A),
                         child: Column(
                           children: [
-                            Center(
-                              child: Icon(Icons.image_aspect_ratio_outlined,
-                                  size: 60, color: Colors.white),
+                            Padding(
+                              padding: const EdgeInsets.all(10.0),
+                              child: Center(
+                                child: Icon(Icons.image_aspect_ratio_outlined,
+                                    size: 40, color: Colors.white),
+                              ),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(top: 20),
@@ -425,7 +438,7 @@ class _HomepageState extends State<Homepage> {
                                 "Visualization",
                                 // textAlign: TextAlign.center,
                                 style: TextStyle(
-                                    fontSize: 30, color: Colors.white),
+                                    fontSize: 20, color: Colors.white),
                               ),
                             ),
                             Padding(
@@ -434,7 +447,7 @@ class _HomepageState extends State<Homepage> {
                                 "Visual content with\nphotos that students\nrelate quickly.",
                                 // textAlign: TextAlign.center,
                                 style: TextStyle(
-                                    fontSize: 25, color: Colors.white),
+                                    fontSize: 15, color: Colors.white),
                               ),
                             ),
                           ],
@@ -443,8 +456,8 @@ class _HomepageState extends State<Homepage> {
                     ),
                   ),
                   SizedBox(
-                    height: 250,
-                    width: 330,
+                    height: 200,
+                    width: 300,
                     child: Padding(
                       padding: const EdgeInsets.only(left: 0),
                       child: Card(
@@ -452,9 +465,12 @@ class _HomepageState extends State<Homepage> {
                         color: const Color.fromRGBO(29, 94, 74, 0.12),
                         child: Column(
                           children: [
-                            Center(
-                              child: Icon(Icons.language,
-                                  size: 60, color: Color(0xff1D5E4A)),
+                            Padding(
+                              padding: const EdgeInsets.all(10.0),
+                              child: Center(
+                                child: Icon(Icons.language,
+                                    size: 40, color: Color(0xff1D5E4A)),
+                              ),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(top: 20),
@@ -462,7 +478,7 @@ class _HomepageState extends State<Homepage> {
                                 "Language",
                                 // textAlign: TextAlign.center,
                                 style: TextStyle(
-                                    fontSize: 30, color: Colors.black),
+                                    fontSize: 20, color: Colors.black),
                               ),
                             ),
                             Padding(
@@ -471,7 +487,7 @@ class _HomepageState extends State<Homepage> {
                                 "Specially focused on\nurdu medium\nstudents.",
                                 // textAlign: TextAlign.center,
                                 style: TextStyle(
-                                    fontSize: 25, color: Colors.black),
+                                    fontSize: 15, color: Colors.black),
                               ),
                             ),
                           ],
@@ -480,8 +496,8 @@ class _HomepageState extends State<Homepage> {
                     ),
                   ),
                   SizedBox(
-                    height: 250,
-                    width: 330,
+                    height: 200,
+                    width: 250,
                     child: Padding(
                       padding: const EdgeInsets.only(left: 0),
                       child: Card(
@@ -489,9 +505,12 @@ class _HomepageState extends State<Homepage> {
                         color: Color(0xff1D5E4A),
                         child: Column(
                           children: [
-                            Center(
-                              child: Icon(Icons.check,
-                                  size: 60, color: Colors.white),
+                            Padding(
+                              padding: const EdgeInsets.all(10.0),
+                              child: Center(
+                                child: Icon(Icons.check,
+                                    size: 40, color: Colors.white),
+                              ),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(top: 20),
@@ -499,7 +518,7 @@ class _HomepageState extends State<Homepage> {
                                 "Easy",
                                 // textAlign: TextAlign.center,
                                 style: TextStyle(
-                                    fontSize: 30, color: Colors.white),
+                                    fontSize: 20, color: Colors.white),
                               ),
                             ),
                             Padding(
@@ -509,7 +528,7 @@ class _HomepageState extends State<Homepage> {
                                 "\n    Handy website helps \n    you to use very easily.",
                                 // textAlign: TextAlign.center,
                                 style: TextStyle(
-                                    fontSize: 25, color: Colors.white),
+                                    fontSize: 15, color: Colors.white),
                               ),
                             ),
                           ],
@@ -520,42 +539,11 @@ class _HomepageState extends State<Homepage> {
                 ],
               ),
             ),
-            /* Card(
-                child: Column(
-              children: [
-                
-                Padding(
-                  padding: EdgeInsets.all(10),
-                  child: Text(
-                    "Contact Us ",
-                    style: TextStyle(fontSize: 30, color: Colors.black),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 30, right: 200),
-                  child: Divider(
-                    height: 20,
-                    thickness: 1,
-                    color: Colors.black,
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(left: 30, right: 30),
-                  child: Text(
-                      "feel free to send any query, we will surely reply back.",
-                      style: TextStyle(
-                        fontSize: 10,
-                        color: Colors.black,
-                      )),
-                ),
-              ],
-            ))*/
-
             Padding(
-              padding: EdgeInsets.only(top: 20),
+              padding: EdgeInsets.only(top: 40, left: 20, right: 20),
               child: SizedBox(
                 height: 400,
-                width: 1050,
+                width: 1105,
                 child: Container(
                   child: VxArc(
                     height: 20,
@@ -570,9 +558,9 @@ class _HomepageState extends State<Homepage> {
                           children: [
                             SizedBox(
                               height: 400,
-                              width: 330,
+                              width: 350,
                               child: Padding(
-                                padding: const EdgeInsets.only(left: 30),
+                                padding: const EdgeInsets.only(left: 20),
                                 child: Card(
                                   //backgroundcolor: rgba(29, 94, 74, 0.12);
                                   color: const Color.fromRGBO(29, 94, 74, 0.12),
@@ -665,7 +653,7 @@ class _HomepageState extends State<Homepage> {
                             ),
                             SizedBox(
                               height: 400,
-                              width: 330,
+                              width: 350,
                               child: Padding(
                                 padding: const EdgeInsets.only(left: 30),
                                 child: Card(
@@ -760,7 +748,7 @@ class _HomepageState extends State<Homepage> {
                             ),
                             SizedBox(
                               height: 400,
-                              width: 330,
+                              width: 350,
                               child: Padding(
                                 padding: const EdgeInsets.only(left: 30),
                                 child: Card(
@@ -865,7 +853,7 @@ class _HomepageState extends State<Homepage> {
               padding: EdgeInsets.only(top: 20),
               child: SizedBox(
                 height: 460,
-                width: 1000,
+                width: 1120,
                 child: Card(
                   color: const Color.fromRGBO(29, 94, 74, 0.12),
                   child: Row(
@@ -999,7 +987,7 @@ class _HomepageState extends State<Homepage> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(left: 20, bottom: 30),
+                        padding: const EdgeInsets.only(left: 90, bottom: 30),
                         child: Image.asset(
                           "assets/images/map.png",
                         ),

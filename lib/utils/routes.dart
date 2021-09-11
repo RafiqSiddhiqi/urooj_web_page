@@ -11,7 +11,7 @@ class MyRoutes {
   // ignore: non_constant_identifier_names
   static String WorksheetPage = "/worksheet";
   // ignore: non_constant_identifier_names
-  static String ClassroomPage = "/classroomsubpage";
+  static String ClassroomPage = "/classroomprensentationsubpage";
   // ignore: non_constant_identifier_names
   static String SubpodcastPage = "/subpodcast";
   // ignore: non_constant_identifier_names

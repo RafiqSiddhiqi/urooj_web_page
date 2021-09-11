@@ -11,6 +11,8 @@ class Footer extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Container(
+          height: 350,
+          width: 1120,
           color: Color(0xff1D5E4A),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -36,7 +38,9 @@ class Footer extends StatelessWidget {
                       foregroundColor:
                           MaterialStateProperty.all<Color>(Colors.blue),
                     ),
-                    onPressed: () {Navigator.pushNamed(context, MyRoutes.BlogPage);},
+                    onPressed: () {
+                      Navigator.pushNamed(context, MyRoutes.BlogPage);
+                    },
                     child: Text(
                       "\nBlog",
                       style: TextStyle(
@@ -56,7 +60,9 @@ class Footer extends StatelessWidget {
                       foregroundColor:
                           MaterialStateProperty.all<Color>(Colors.blue),
                     ),
-                    onPressed: () {Navigator.pushNamed(context, MyRoutes.PodcastPage);},
+                    onPressed: () {
+                      Navigator.pushNamed(context, MyRoutes.PodcastPage);
+                    },
                     child: Text(
                       "\nPodcast",
                       textAlign: TextAlign.center,
@@ -74,7 +80,10 @@ class Footer extends StatelessWidget {
                       foregroundColor:
                           MaterialStateProperty.all<Color>(Colors.blue),
                     ),
-                    onPressed: () {Navigator.pushNamed(context, MyRoutes.ClassroompresentationPage);},
+                    onPressed: () {
+                      Navigator.pushNamed(
+                          context, MyRoutes.ClassroompresentationPage);
+                    },
                     child: Text(
                       "\nClassroom Presentation",
                       textAlign: TextAlign.center,
@@ -92,7 +101,9 @@ class Footer extends StatelessWidget {
                       foregroundColor:
                           MaterialStateProperty.all<Color>(Colors.blue),
                     ),
-                    onPressed: () {Navigator.pushNamed(context, MyRoutes.videoPage);},
+                    onPressed: () {
+                      Navigator.pushNamed(context, MyRoutes.videoPage);
+                    },
                     child: Text(
                       "\nVideo",
                       textAlign: TextAlign.center,
@@ -110,7 +121,9 @@ class Footer extends StatelessWidget {
                       foregroundColor:
                           MaterialStateProperty.all<Color>(Colors.blue),
                     ),
-                    onPressed: () {Navigator.pushNamed(context, MyRoutes.WorksheetPage);},
+                    onPressed: () {
+                      Navigator.pushNamed(context, MyRoutes.WorksheetPage);
+                    },
                     child: Text(
                       "\nWorksheet",
                       textAlign: TextAlign.center,
@@ -128,7 +141,9 @@ class Footer extends StatelessWidget {
                       foregroundColor:
                           MaterialStateProperty.all<Color>(Colors.blue),
                     ),
-                    onPressed: () {Navigator.pushNamed(context, MyRoutes.PoetsPage);},
+                    onPressed: () {
+                      Navigator.pushNamed(context, MyRoutes.PoetsPage);
+                    },
                     child: Text(
                       "\nUrdu Poets",
                       textAlign: TextAlign.center,

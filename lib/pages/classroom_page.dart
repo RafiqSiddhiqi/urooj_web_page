@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:urooj_web_page/pages/footer.dart';
+import 'package:urooj_web_page/utils/routes.dart';
 
 class ClassroomPage extends StatelessWidget {
   const ClassroomPage({Key? key}) : super(key: key);
@@ -500,30 +501,61 @@ class ClassroomPage extends StatelessWidget {
                               style: TextStyle(fontSize: 20),
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 20),
-                            child: SizedBox(
-                              height: 30,
-                              width: 170,
-                              child: ElevatedButton(
-                                  onPressed: () {
-                                    // Navigator.pushNamed(
-                                    //     context, MyRoutes.singleWorksheet);
-                                  },
-                                  style: ElevatedButton.styleFrom(
-                                      primary: Color(0xff1D5E4A),
-                                      shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(15),
-                                          side: BorderSide())),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(3),
-                                    child: Text(
-                                      "presentaion",
-                                      style: TextStyle(fontSize: 16),
-                                    ),
-                                  )),
-                            ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 20),
+                                child: SizedBox(
+                                  height: 30,
+                                  width: 130,
+                                  child: ElevatedButton(
+                                      onPressed: () {
+                                        Navigator.pushNamed(
+                                            context, MyRoutes.LoginPage);
+                                      },
+                                      style: ElevatedButton.styleFrom(
+                                          primary: Color(0xff1D5E4A),
+                                          shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(15),
+                                              side: BorderSide())),
+                                      child: Padding(
+                                        padding:
+                                            const EdgeInsets.only(left: 10),
+                                        child: Text(
+                                          "Login",
+                                          style: TextStyle(fontSize: 16),
+                                        ),
+                                      )),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 20),
+                                child: SizedBox(
+                                  height: 30,
+                                  width: 130,
+                                  child: ElevatedButton(
+                                      onPressed: () {
+                                        Navigator.pushNamed(
+                                            context, MyRoutes.RegistrationPage);
+                                      },
+                                      style: ElevatedButton.styleFrom(
+                                          primary: Color(0xff1D5E4A),
+                                          shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(15),
+                                              side: BorderSide())),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(3),
+                                        child: Text(
+                                          "Register",
+                                          style: TextStyle(fontSize: 16),
+                                        ),
+                                      )),
+                                ),
+                              ),
+                            ],
                           ),
                           Padding(
                             padding: const EdgeInsets.only(top: 20),
@@ -568,30 +600,61 @@ class ClassroomPage extends StatelessWidget {
                               style: TextStyle(fontSize: 20),
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 20),
-                            child: SizedBox(
-                              height: 30,
-                              width: 170,
-                              child: ElevatedButton(
-                                  onPressed: () {
-                                    // Navigator.pushNamed(
-                                    //     context, MyRoutes.singleWorksheet);
-                                  },
-                                  style: ElevatedButton.styleFrom(
-                                      primary: Color(0xff1D5E4A),
-                                      shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(15),
-                                          side: BorderSide())),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(3),
-                                    child: Text(
-                                      "presentaion",
-                                      style: TextStyle(fontSize: 16),
-                                    ),
-                                  )),
-                            ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 20),
+                                child: SizedBox(
+                                  height: 30,
+                                  width: 130,
+                                  child: ElevatedButton(
+                                      onPressed: () {
+                                        Navigator.pushNamed(
+                                            context, MyRoutes.LoginPage);
+                                      },
+                                      style: ElevatedButton.styleFrom(
+                                          primary: Color(0xff1D5E4A),
+                                          shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(15),
+                                              side: BorderSide())),
+                                      child: Padding(
+                                        padding:
+                                            const EdgeInsets.only(left: 10),
+                                        child: Text(
+                                          "Login",
+                                          style: TextStyle(fontSize: 16),
+                                        ),
+                                      )),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 20),
+                                child: SizedBox(
+                                  height: 30,
+                                  width: 130,
+                                  child: ElevatedButton(
+                                      onPressed: () {
+                                        Navigator.pushNamed(
+                                            context, MyRoutes.RegistrationPage);
+                                      },
+                                      style: ElevatedButton.styleFrom(
+                                          primary: Color(0xff1D5E4A),
+                                          shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(15),
+                                              side: BorderSide())),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(3),
+                                        child: Text(
+                                          "Register",
+                                          style: TextStyle(fontSize: 16),
+                                        ),
+                                      )),
+                                ),
+                              ),
+                            ],
                           ),
                           Padding(
                             padding: const EdgeInsets.only(top: 20),
@@ -607,7 +670,7 @@ class ClassroomPage extends StatelessWidget {
                               style: TextStyle(
                                   fontSize: 20, color: Color(0xff1D5E4A)),
                             ),
-                          ),
+                          )
                         ],
                       )),
                 ),

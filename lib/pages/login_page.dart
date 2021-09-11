@@ -160,11 +160,11 @@ class _LoginPageState extends State<LoginPage> {
             children: [
               Padding(
                 padding: const EdgeInsets.only(
-                    right: 244, left: 294, top: 99, bottom: 126),
+                    right: 160, left: 160, top: 99, bottom: 126),
                 child: Container(
                   color: Color.fromRGBO(29, 94, 74, 0.12),
                   height: 320,
-                  width: 1200,
+                  width: 1120,
                   child: Column(
                     children: [
                       Row(

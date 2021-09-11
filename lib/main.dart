@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
           "/subvideopage": (context) => SubvideoPage(),
           "/videopage": (context) => VideoPage(),
           "/worksheet": (cnotesgenerontext) => WorksheetPage(),
-          "/classroomsubpage": (context) => ClassroomPage(),
+          "/classroomprensentationsubpage": (context) => ClassroomPage(),
           "/subpodcast": (context) => SubpodcastPage(),
           "/poetspage": (context) => PoetsPage(),
           "/singleblogpage": (context) => SingleblogPage(),
